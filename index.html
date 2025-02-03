@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stunning Todo List</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Todo List</h1>
+      </header>
+      <main>
+        <div class="todo-input">
+          <input
+            type="text"
+            id="textbox"
+            placeholder="Add a new task..."
+            required
+          />
+          <input type="date" id="calender-box" required />
+          <button onclick="getData()" class="btn add-btn">Add Task</button>
+        </div>
+        <div class="list-container">
+          <ul id="todo-list"></ul>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
